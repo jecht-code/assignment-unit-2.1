@@ -87,7 +87,14 @@ console.log(petStatus);
 //      assigns the highest value to `mostPets`. There's several possibilities --
 //      be sure to think through all the scenarios. 
 //      console.log `mostPets` after the conditional has run.
-
+var mostPets;
+var pets = 2;
+if (pets >= friendsPets) {
+  mostPets = pets;
+} else if (pets <= friendsPets) {
+  mostPets = friendsPets;
+}
+console.log(mostPets);
 // 16 - Make a variable called `luckyResult`
 //      Write a *switch* statement that sets `luckyResult` to:
 //      "First is the worst" if your lucky number is 1
@@ -96,10 +103,39 @@ console.log(petStatus);
 //      Otherwise, "Luck is what happens when preparation meets opportunity"
 //      You'll need to research how to use switch statements!
 //      console.log `luckyResult` after the conditional has run.
-
+var luckyResult = 3;
+switch (luckyResult) {
+  case 1:
+    console.log("First is the worst")
+    break;
+  case 2:
+    console.log("Second is the best")
+    break;
+  case 3:
+    console.log("Third is the one with the polka dot dress")
+    break;
+  default:
+    console.log("Luck is what happens when preparation meets opportunity")
+}
+console.log(luckyResult);
 // 17 -- Rewrite question 12 with a `ternary` operator. You'll need to do research!
+// 12 - Create a variable called `result`. Create a conditional:
+//      if adventurous is true, set `result` to be "Adventures are great!", 
+//      if it's not true,  set `result` to be "How about we stay home?"
+//      Console log the value of `result`
 
+//result;
+//
+//if (adventurous === true) {
+//    result = "Adventures are great!";
+//} else {
+//    result = "How about we stay home?";
+//}
 
+//asdf ? asdf : asdf
+result = adventurous === true ? "Adventures are great!" : "How about we stay home?"
+
+console.log(result);
 
 
 
